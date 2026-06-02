@@ -5,58 +5,53 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>UX/UI Personal Portfolio</title>
-
-  <!--
-    - favicon
-  -->
+  <title>Michelle Arumemi | UX/UI Designer Portfolio</title>
+  <meta name="description" content="Michelle Arumemi is a creative UX/UI Designer specializing in responsive design and user experience. Explore my portfolio of design projects and download my CV.">
+  <meta name="keywords" content="UX/UI Designer, UI Design, UX Design Portfolio, Michelle Arumemi, Product Design, Web Design, Interaction Design, Michelle Arumemi Portfolio, User Experience, User Interface, Design Projects, CV Download">
+  <meta name="author" content="Michelle Arumemi">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Michelle Arumemi | UX/UI Designer Portfolio">
+  <meta property="og:description" content="Discover my UX/UI design portfolio showcasing creative, user-centered design solutions for digital products.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yourportfoliourl.com">
+  <meta property="og:image" content="./assets/images/prof.jpg">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:site_name" content="Michelle Arumemi Portfolio">
+  <meta name="theme-color" content="#1a1a2e">
+  <link rel="canonical" href="https://yourportfoliourl.com">
   <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
-
-  <!--
-    - custom css link
-  -->
-  <link rel="stylesheet" href="./assets/css/style.css">
-
-  <!--
-    - google font link
-  -->
+  <link rel="stylesheet" href="./css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
+  <canvas id="cursor-bg" style="position:fixed;inset:0;width:100%;height:100%;z-index:0;pointer-events:none;"></canvas>
 
-  <!--
-    - #MAIN
-  -->
+  <!-- #PRELOADER -->
+  <div class="preloader" data-preloader>
+  <canvas id="preloader-glow" style="position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:0;"></canvas>
+    <div class="preloader-circle"></div>
+  </div>
 
   <main>
 
-    <!--
-      - #SIDEBAR
-    -->
-
+    <!-- #SIDEBAR -->
     <aside class="sidebar" data-sidebar>
 
       <div class="sidebar-info">
-
         <figure class="avatar-box">
-          <img src="./assets/images/my-avatar.png" alt="Azam hanrick" width="80">
+          <img src="./assets/images/prof.jpg" alt="Michelle Arumemi" width="80">
         </figure>
-
         <div class="info-content">
-          <h1 class="name" title="Azam hanrick">Naem Azam</h1>
-
-          <p class="title">UI Designer</p>
+          <h1 class="name" title="Michelle Arumemi">Michelle Arumemi</h1>
+          <p class="title">UI/UX Designer</p>
         </div>
-
         <button class="info_more-btn" data-sidebar-btn>
           <span>Show Contacts</span>
-
           <ion-icon name="chevron-down"></ion-icon>
         </button>
-
       </div>
 
       <div class="sidebar-info_more">
@@ -64,144 +59,72 @@
         <div class="separator"></div>
 
         <ul class="contacts-list">
-
           <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-
+            <div class="icon-box"><ion-icon name="mail-outline"></ion-icon></div>
             <div class="contact-info">
               <p class="contact-title">Email</p>
-
-              <a href="mailto:azam@example.com" class="contact-link">azam@example.com</a>
+              <a href="mailto:michellearumemi20@gmail.com" class="contact-link">michellearumemi20@gmail.com</a>
             </div>
-
           </li>
-
           <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
-            </div>
-
+            <div class="icon-box"><ion-icon name="phone-portrait-outline"></ion-icon></div>
             <div class="contact-info">
-              <p class="contact-title">Phone</p>
-
-              <a href="tel:+12133522795" class="contact-link">+1 (213) 352-2795</a>
+              <p class="contact-title">WhatsApp</p>
+              <a href="https://wa.me/2349158290491" target="_blank" rel="noopener" class="contact-link">+234 (0) 915-829-0491</a>
             </div>
-
           </li>
-
           <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Birthday</p>
-
-              <time datetime="1982-06-23">June 23, 1982</time>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-
+            <div class="icon-box"><ion-icon name="location-outline"></ion-icon></div>
             <div class="contact-info">
               <p class="contact-title">Location</p>
-
-              <address>Sacramento, California, USA</address>
+              <address>Abuja, Nigeria</address>
             </div>
-
           </li>
-
         </ul>
 
         <div class="separator"></div>
 
         <ul class="social-list">
-
           <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="#" class="social-link">
+            <a href="https://instagram.com/ohitarh" class="social-link" target="_blank" rel="noopener" aria-label="Instagram">
               <ion-icon name="logo-instagram"></ion-icon>
             </a>
           </li>
-
+          <li class="social-item">
+            <a href="https://pinterest.com/michywithac" class="social-link" target="_blank" rel="noopener" aria-label="Pinterest">
+              <ion-icon name="logo-pinterest"></ion-icon>
+            </a>
+          </li>
         </ul>
+
+        <div class="separator"></div>
+
+        <a href="./assets/cv/Arumemi-Michelle-UIUX-Resume.pdf" download class="cv-download-btn">
+          <ion-icon name="download-outline"></ion-icon>
+          <span>Download CV</span>
+        </a>
 
       </div>
 
     </aside>
 
-
-
-
-
-    <!--
-      - #main-content
-    -->
-
+    <!-- #main-content -->
     <div class="main-content">
 
-      <!--
-        - #NAVBAR
-      -->
-
+      <!-- #NAVBAR -->
       <nav class="navbar">
-
         <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Blog</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
-          </li>
-
+          <li class="navbar-item"><button class="navbar-link active" data-nav-link>About</button></li>
+          <li class="navbar-item"><button class="navbar-link" data-nav-link>Resume</button></li>
+          <li class="navbar-item"><button class="navbar-link" data-nav-link>Portfolio</button></li>
+          <li class="navbar-item"><button class="navbar-link" data-nav-link>Blog</button></li>
+          <li class="navbar-item"><button class="navbar-link" data-nav-link>Contact</button></li>
         </ul>
-
       </nav>
 
 
-
-
-
-      <!--
-        - #ABOUT
-      -->
-
-      <article class="about  active" data-page="about">
+      <!-- ==================== #ABOUT ==================== -->
+      <article class="about active" data-page="about">
 
         <header>
           <h2 class="h2 article-title">About me</h2>
@@ -209,725 +132,379 @@
 
         <section class="about-text">
           <p>
-            I'm Creative UI/UX Designer from Sydney, Australia, working in web development and print media.
-            I enjoy
-            turning complex problems into simple, beautiful and intuitive designs.
+            I am a UX/UI designer based in Abuja, Nigeria, focused on crafting premium digital experiences for
+            startups, agencies, and enterprise teams.
           </p>
-
           <p>
-            My job is to build your website so that it is functional and user-friendly but at the same time attractive.
-            Moreover, I
-            add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring
-            across your
-            message and identity in the most creative way. I created web design for many famous brand companies.
+            I turn complex product challenges into clear, polished interfaces that communicate strong visual hierarchy,
+            improve conversion, and create confidence for every user.
+          </p>
+          <p>
+            My work balances clean aesthetics with practical usability, delivering websites and products that feel
+            modern, refined, and easy to navigate.
           </p>
         </section>
 
-
-        <!--
-          - service
-        -->
-
+        <!-- service -->
         <section class="service">
-
-          <h3 class="h3 service-title">What i'm doing</h3>
-
+          <h3 class="h3 service-title">What I Do</h3>
           <ul class="service-list">
 
             <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-design.png
-                " alt="design icon" width="40">
-              </div>
-
+              <div class="service-icon-box"><ion-icon name="brush-outline"></ion-icon></div>
               <div class="service-content-box">
                 <h4 class="h4 service-item-title">Web design</h4>
-
-                <p class="service-item-text">
-                  The most modern and high-quality design made at a professional level.
-                </p>
+                <p class="service-item-text">Modern interface design with brand-led layouts, intuitive flows, and attention to detail.</p>
               </div>
-
             </li>
 
             <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.png" alt="Web development icon" width="40">
-              </div>
-
+              <div class="service-icon-box"><ion-icon name="code-slash-outline"></ion-icon></div>
               <div class="service-content-box">
                 <h4 class="h4 service-item-title">Web development</h4>
-
-                <p class="service-item-text">
-                  High-quality development of sites at the professional level.
-                </p>
+                <p class="service-item-text">Responsive, polished builds that support performance, accessibility, and brand consistency.</p>
+                <a href="https://michellearumemi.vercel.app" class="service-portfolio-link" target="_blank" rel="noopener" data-nav-link>Check out my portfolio</a>
               </div>
-
             </li>
 
             <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-app.png" alt="mobile app icon" width="40">
-              </div>
-
+              <div class="service-icon-box"><ion-icon name="phone-portrait-outline"></ion-icon></div>
               <div class="service-content-box">
                 <h4 class="h4 service-item-title">Mobile apps</h4>
-
-                <p class="service-item-text">
-                  Professional development of applications for iOS and Android.
-                </p>
+                <p class="service-item-text">Professional development of applications for iOS and Android.</p>
               </div>
-
             </li>
 
             <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-photo.png" alt="camera icon" width="40">
-              </div>
-
+              <div class="service-icon-box"><ion-icon name="sparkles-outline"></ion-icon></div>
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Photography</h4>
-
-                <p class="service-item-text">
-                  I make high-quality photos of any category at a professional level.
-                </p>
+                <h4 class="h4 service-item-title">Brand strategy</h4>
+                <p class="service-item-text">Strategic visual storytelling that brings your brand message to life across digital products.</p>
               </div>
-
             </li>
 
           </ul>
-
         </section>
 
+        <!-- fun facts -->
+        <section class="service" style="margin-top: 10px;">
+          <h3 class="h3 service-title">A Few Fun Facts</h3>
+          <ul class="service-list">
 
-        <!--
-          - testimonials
-        -->
-
-        <section class="testimonials">
-
-          <h3 class="h3 testimonials-title">Testimonials</h3>
-
-          <ul class="testimonials-list has-scrollbar">
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Daniel lewis</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Azam was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
+            <li class="service-item">
+              <div class="service-icon-box"><ion-icon name="color-palette-outline"></ion-icon></div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Colour obsessed</h4>
+                <p class="service-item-text">I can spend an embarrassingly long time picking the perfect hex code — every shade tells a story.</p>
               </div>
             </li>
 
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jessica miller</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Azam was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
+            <li class="service-item">
+              <div class="service-icon-box"><ion-icon name="cafe-outline"></ion-icon></div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Fuelled by tea</h4>
+                <p class="service-item-text">Most of my best design decisions happen over a warm cup. It's basically part of the process.</p>
               </div>
             </li>
 
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Azam was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
+            <li class="service-item">
+              <div class="service-icon-box"><ion-icon name="musical-notes-outline"></ion-icon></div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Playlist required</h4>
+                <p class="service-item-text">Every project gets its own playlist. Lo-fi for wireframes, Afrobeats for final polish — no exceptions.</p>
               </div>
             </li>
 
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Azam was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
+            <li class="service-item">
+              <div class="service-icon-box"><ion-icon name="moon-outline"></ion-icon></div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Night owl</h4>
+                <p class="service-item-text">Creativity peaks at midnight. Some of my favourite designs were born when everyone else was asleep.</p>
               </div>
             </li>
 
           </ul>
-
-        </section>
-
-
-        <!--
-          - testimonials modal
-        -->
-
-        <div class="modal-container" data-modal-container>
-
-          <div class="overlay" data-overlay></div>
-
-          <section class="testimonials-modal">
-
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-            <div class="modal-img-wrapper">
-              <figure class="modal-avatar-box">
-                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
-              </figure>
-
-              <img src="./assets/images/icon-quote.svg" alt="quote icon">
-            </div>
-
-            <div class="modal-content">
-
-              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
-
-              <time datetime="2021-06-14">14 June, 2021</time>
-
-              <div data-modal-text>
-                <p>
-                  Azam was hired to create a corporate identity. We were very pleased with the work done. She has a
-                  lot of experience
-                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                  consectetur adipiscing
-                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                </p>
-              </div>
-
-            </div>
-
-          </section>
-
-        </div>
-
-
-        <!--
-          - clients
-        -->
-
-        <section class="clients">
-
-          <h3 class="h3 clients-title">Clients</h3>
-
-          <ul class="clients-list has-scrollbar">
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-1-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-2-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-3-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-4-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-5-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-6-color.png" alt="client logo">
-              </a>
-            </li>
-
-          </ul>
-
         </section>
 
       </article>
 
 
-
-
-
-      <!--
-        - #RESUME
-      -->
-
+      <!-- ==================== #RESUME ==================== -->
       <article class="resume" data-page="resume">
 
         <header>
           <h2 class="h2 article-title">Resume</h2>
+          <p class="section-intro">A quick overview of my experience, education, and the product design skills I bring to every project.</p>
         </header>
 
         <section class="timeline">
-
           <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
+            <div class="icon-box"><ion-icon name="book-outline"></ion-icon></div>
             <h3 class="h3">Education</h3>
           </div>
-
           <ol class="timeline-list">
-
             <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">University school of the arts</h4>
-
-              <span>2007 — 2008</span>
-
+              <h4 class="h4 timeline-item-title">Bingham University, Karu, Nasarawa State</h4>
+              <span>2021 — 2025</span>
               <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
+                Focused on interaction design, usability research, and digital product strategy. Built hands-on skills in layout systems, typography, and accessible interface design.
               </p>
-
             </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">New york academy of art</h4>
-
-              <span>2006 — 2007</span>
-
-              <p class="timeline-text">
-                Ratione voluptatem sequi nesciunt, facere quisquams facere menda ossimus, omnis voluptas assumenda est
-                omnis..
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">High school of art and design</h4>
-
-              <span>2002 — 2004</span>
-
-              <p class="timeline-text">
-                Duis aute irure dolor in reprehenderit in voluptate, quila voluptas mag odit aut fugit, sed consequuntur
-                magni dolores
-                eos.
-              </p>
-
-            </li>
-
           </ol>
-
         </section>
 
         <section class="timeline">
-
           <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
+            <div class="icon-box"><ion-icon name="briefcase-outline"></ion-icon></div>
             <h3 class="h3">Experience</h3>
           </div>
-
           <ol class="timeline-list">
-
             <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Creative director</h4>
-
-              <span>2015 — Present</span>
-
+              <h4 class="h4 timeline-item-title">Freelance / Contract UI/UX Designer</h4>
+              <span>2021 — Present</span>
               <p class="timeline-text">
-                Nemo enim ipsam voluptatem blanditiis praesentium voluptum delenit atque corrupti, quos dolores et qvuas
-                molestias
-                exceptur.
+                Leading UI/UX projects from idea to launch — wireframes, prototypes, usability flows, and clean visual systems for responsive web and mobile experiences.
               </p>
-
             </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Art director</h4>
-
-              <span>2013 — 2015</span>
-
-              <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Web designer</h4>
-
-              <span>2010 — 2013</span>
-
-              <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
-              </p>
-
-            </li>
-
           </ol>
-
         </section>
 
+        <!-- <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box"><ion-icon name="ribbon-outline"></ion-icon></div>
+            <h3 class="h3">Certifications</h3>
+          </div>
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">UI/UX Design Certification</h4>
+              <span>2023 — Online</span>
+              <p class="timeline-text">
+                Professional certification covering interaction design, user testing, and responsive product delivery.
+              </p>
+            </li>
+          </ol> -->
+        <!-- </section> -->
+
         <section class="skill">
-
           <h3 class="h3 skills-title">My skills</h3>
-
           <ul class="skills-list content-card">
 
             <li class="skills-item">
-
               <div class="title-wrapper">
                 <h5 class="h5">Web design</h5>
                 <data value="80">80%</data>
               </div>
-
               <div class="skill-progress-bg">
                 <div class="skill-progress-fill" style="width: 80%;"></div>
               </div>
-
             </li>
 
             <li class="skills-item">
-
               <div class="title-wrapper">
                 <h5 class="h5">Graphic design</h5>
                 <data value="70">70%</data>
               </div>
-
               <div class="skill-progress-bg">
                 <div class="skill-progress-fill" style="width: 70%;"></div>
               </div>
-
             </li>
 
             <li class="skills-item">
-
               <div class="title-wrapper">
                 <h5 class="h5">Branding</h5>
                 <data value="90">90%</data>
               </div>
-
               <div class="skill-progress-bg">
                 <div class="skill-progress-fill" style="width: 90%;"></div>
               </div>
-
             </li>
 
             <li class="skills-item">
-
               <div class="title-wrapper">
                 <h5 class="h5">WordPress</h5>
                 <data value="50">50%</data>
               </div>
-
               <div class="skill-progress-bg">
                 <div class="skill-progress-fill" style="width: 50%;"></div>
               </div>
+            </li>
 
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Figma</h5>
+                <data value="95">95%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 95%;"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Prototyping</h5>
+                <data value="85">85%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 85%;"></div>
+              </div>
             </li>
 
           </ul>
+        </section>
 
+        <!-- Design philosophy -->
+        <section class="timeline" style="margin-top: 30px;">
+          <div class="title-wrapper">
+            <div class="icon-box"><ion-icon name="bulb-outline"></ion-icon></div>
+            <h3 class="h3">Design Philosophy</h3>
+          </div>
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">People first, pixels second</h4>
+              <p class="timeline-text">
+                Great design starts by truly understanding the person on the other side of the screen. Every layout decision, every colour choice, every interaction should earn its place by making someone's experience clearer, easier, or more enjoyable.
+              </p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Simplicity is the hardest thing to achieve</h4>
+              <p class="timeline-text">
+                I believe the best interface is one that feels effortless — where the complexity is handled invisibly, and the user never has to think twice. Getting there takes rigour, iteration, and a lot of ruthless editing.
+              </p>
+            </li>
+          </ol>
         </section>
 
       </article>
 
 
-
-
-
-      <!--
-        - #PORTFOLIO
-      -->
-
+      <!-- ==================== #PORTFOLIO ==================== -->
       <article class="portfolio" data-page="portfolio">
 
         <header>
           <h2 class="h2 article-title">Portfolio</h2>
+          <p class="section-intro">Case studies and product work that demonstrate thoughtful digital experiences for brands, SaaS, and portfolio sites. Each project reflects a clear visual system and interaction details designed to help users move quickly and confidently.</p>
         </header>
 
         <section class="projects">
 
           <ul class="filter-list">
-
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web design</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Applications</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web development</button>
-            </li>
-
+            <li class="filter-item"><button class="active" data-filter-btn>All</button></li>
+            <li class="filter-item"><button data-filter-btn>Web design</button></li>
+            <li class="filter-item"><button data-filter-btn>Applications</button></li>
+            <li class="filter-item"><button data-filter-btn>Web development</button></li>
           </ul>
 
           <div class="filter-select-box">
-
             <button class="filter-select" data-select>
-
               <div class="select-value" data-selecct-value>Select category</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
+              <div class="select-icon"><ion-icon name="chevron-down"></ion-icon></div>
             </button>
-
             <ul class="select-list">
-
-              <li class="select-item">
-                <button data-select-item>All</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web design</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Applications</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web development</button>
-              </li>
-
+              <li class="select-item"><button data-select-item>All</button></li>
+              <li class="select-item"><button data-select-item>Web design</button></li>
+              <li class="select-item"><button data-select-item>Applications</button></li>
+              <li class="select-item"><button data-select-item>Web development</button></li>
             </ul>
-
           </div>
 
           <ul class="project-list">
 
-            <li class="project-item  active" data-filter-item data-category="web development">
+            <li class="project-item active" data-filter-item data-category="web development">
               <a href="#">
-
                 <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
                   <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
                 </figure>
-
                 <h3 class="project-title">Finance</h3>
-
                 <p class="project-category">Web development</p>
-
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web development">
+            <li class="project-item active" data-filter-item data-category="web development">
               <a href="#">
-
                 <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
                   <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
                 </figure>
-
                 <h3 class="project-title">Orizon</h3>
-
                 <p class="project-category">Web development</p>
-
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web design">
+            <li class="project-item active" data-filter-item data-category="web design">
               <a href="#">
-
                 <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
                   <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
                 </figure>
-
                 <h3 class="project-title">Fundo</h3>
-
                 <p class="project-category">Web design</p>
-
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="applications">
+            <li class="project-item active" data-filter-item data-category="applications">
               <a href="#">
-
                 <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
                   <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
                 </figure>
-
                 <h3 class="project-title">Brawlhalla</h3>
-
                 <p class="project-category">Applications</p>
-
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web design">
+            <li class="project-item active" data-filter-item data-category="web design">
               <a href="#">
-
                 <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
                   <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
                 </figure>
-
                 <h3 class="project-title">DSM.</h3>
-
                 <p class="project-category">Web design</p>
-
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web design">
+            <li class="project-item active" data-filter-item data-category="web design">
               <a href="#">
-
                 <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
                   <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
                 </figure>
-
                 <h3 class="project-title">MetaSpark</h3>
-
                 <p class="project-category">Web design</p>
-
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web development">
+            <li class="project-item active" data-filter-item data-category="web development">
               <a href="#">
-
                 <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
                   <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
                 </figure>
-
                 <h3 class="project-title">Summary</h3>
-
                 <p class="project-category">Web development</p>
-
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="applications">
+            <li class="project-item active" data-filter-item data-category="applications">
               <a href="#">
-
                 <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
                   <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
                 </figure>
-
                 <h3 class="project-title">Task Manager</h3>
-
                 <p class="project-category">Applications</p>
-
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web development">
+            <li class="project-item active" data-filter-item data-category="web development">
               <a href="#">
-
                 <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
                   <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
                 </figure>
-
                 <h3 class="project-title">Arrival</h3>
-
                 <p class="project-category">Web development</p>
-
               </a>
             </li>
 
@@ -935,243 +512,229 @@
 
         </section>
 
+        <!-- Design process -->
+        <section class="timeline" style="margin-top: 40px;">
+          <div class="title-wrapper">
+            <div class="icon-box"><ion-icon name="git-network-outline"></ion-icon></div>
+            <h3 class="h3">My Process</h3>
+          </div>
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">01 — Discover</h4>
+              <p class="timeline-text">I start by asking the right questions — about your users, your goals, and what success actually looks like for the project.</p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">02 — Define</h4>
+              <p class="timeline-text">Research becomes a clear brief. I map user flows, identify pain points, and lock in the design direction before a single pixel is placed.</p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">03 — Design</h4>
+              <p class="timeline-text">From low-fi wireframes to high-fidelity prototypes, every screen is built with intention — hierarchy, spacing, and interaction all working together.</p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">04 — Deliver</h4>
+              <p class="timeline-text">Clean handoff files, documented components, and ongoing support if needed. The goal is a product your team can build on and your users will love.</p>
+            </li>
+          </ol>
+        </section>
+
       </article>
 
 
-
-
-
-      <!--
-        - #BLOG
-      -->
-
+      <!-- ==================== #BLOG ==================== -->
       <article class="blog" data-page="blog">
 
         <header>
           <h2 class="h2 article-title">Blog</h2>
+          <p class="section-intro">Practical ideas, interface patterns, and design insights to help you build stronger digital products.</p>
         </header>
 
         <section class="blog-posts">
-
           <ul class="blog-posts-list">
 
             <li class="blog-post-item">
               <a href="#">
-
                 <figure class="blog-banner-box">
                   <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
                 </figure>
-
                 <div class="blog-content">
-
                   <div class="blog-meta">
                     <p class="blog-category">Design</p>
-
                     <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                    <time datetime="2024-02-23">Feb 23, 2024</time>
                   </div>
-
-                  <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
-
-                  <p class="blog-text">
-                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
-                  </p>
-
+                  <h3 class="h3 blog-item-title">Design conferences in 2024</h3>
+                  <p class="blog-text">A curated look at the conferences shaping modern UX and product design — and what to bring home from each one.</p>
                 </div>
-
               </a>
             </li>
 
             <li class="blog-post-item">
               <a href="#">
-
                 <figure class="blog-banner-box">
                   <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
                 </figure>
-
                 <div class="blog-content">
-
                   <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
+                    <p class="blog-category">Typography</p>
                     <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                    <time datetime="2024-02-23">Feb 23, 2024</time>
                   </div>
-
-                  <h3 class="h3 blog-item-title">Best fonts every designer</h3>
-
-                  <p class="blog-text">
-                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
-                  </p>
-
+                  <h3 class="h3 blog-item-title">Fonts that make interfaces feel alive</h3>
+                  <p class="blog-text">Choosing the right typeface is half the work. Here are the font pairings I keep coming back to — and why they work so well in UI.</p>
                 </div>
-
               </a>
             </li>
 
             <li class="blog-post-item">
               <a href="#">
-
                 <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
+                  <img src="./assets/images/blog-3.jpg" alt="Design digest" loading="lazy">
                 </figure>
-
                 <div class="blog-content">
-
                   <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
+                    <p class="blog-category">Roundup</p>
                     <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                    <time datetime="2024-02-23">Feb 23, 2024</time>
                   </div>
-
-                  <h3 class="h3 blog-item-title">Design digest #80</h3>
-
-                  <p class="blog-text">
-                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
-                  </p>
-
+                  <h3 class="h3 blog-item-title">The 10 UX patterns I use on every project</h3>
+                  <p class="blog-text">After four years of freelancing, these are the interaction patterns I reach for first — they solve problems quickly and feel natural to users.</p>
                 </div>
-
               </a>
             </li>
 
             <li class="blog-post-item">
               <a href="#">
-
                 <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
+                  <img src="./assets/images/blog-4.jpg" alt="UI interactions" loading="lazy">
                 </figure>
-
                 <div class="blog-content">
-
                   <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
+                    <p class="blog-category">Motion</p>
                     <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                    <time datetime="2024-02-23">Feb 23, 2024</time>
                   </div>
-
-                  <h3 class="h3 blog-item-title">UI interactions of the week</h3>
-
-                  <p class="blog-text">
-                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
-                  </p>
-
+                  <h3 class="h3 blog-item-title">Why micro-animations change everything</h3>
+                  <p class="blog-text">The tiny transitions users barely notice are often the ones that make a product feel premium. Here's how I think about motion without overdoing it.</p>
                 </div>
-
               </a>
             </li>
 
             <li class="blog-post-item">
               <a href="#">
-
                 <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
+                  <img src="./assets/images/blog-5.jpg" alt="Spacing" loading="lazy">
                 </figure>
-
                 <div class="blog-content">
-
                   <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
+                    <p class="blog-category">Layout</p>
                     <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                    <time datetime="2024-02-23">Feb 23, 2024</time>
                   </div>
-
-                  <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
-
-                  <p class="blog-text">
-                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  </p>
-
+                  <h3 class="h3 blog-item-title">White space is not wasted space</h3>
+                  <p class="blog-text">Designers new to the craft often want to fill every gap. Here's the mindset shift that changed how I build layouts — and made everything look more intentional.</p>
                 </div>
-
               </a>
             </li>
 
             <li class="blog-post-item">
               <a href="#">
-
                 <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
+                  <img src="./assets/images/blog-6.jpg" alt="Colour" loading="lazy">
                 </figure>
-
                 <div class="blog-content">
-
                   <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
+                    <p class="blog-category">Colour</p>
                     <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                    <time datetime="2024-02-23">Feb 23, 2024</time>
                   </div>
-
-                  <h3 class="h3 blog-item-title">Design digest #79</h3>
-
-                  <p class="blog-text">
-                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
-                  </p>
-
+                  <h3 class="h3 blog-item-title">Building a colour system that actually scales</h3>
+                  <p class="blog-text">Picking a palette is easy. Making it work across light mode, dark mode, error states, and hover effects is where the real work begins.</p>
                 </div>
-
               </a>
             </li>
 
           </ul>
+        </section>
 
+        <!-- Design tip callout -->
+        <section class="timeline" style="margin-top: 40px;">
+          <div class="title-wrapper">
+            <div class="icon-box"><ion-icon name="heart-outline"></ion-icon></div>
+            <h3 class="h3">Things I Believe In</h3>
+          </div>
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Good design is honest</h4>
+              <p class="timeline-text">It doesn't pretend to be something it's not. It doesn't over-promise or manipulate. It earns trust by being clear, consistent, and real.</p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Constraints are a gift</h4>
+              <p class="timeline-text">A tight brief, a limited colour palette, a small screen — these restrictions don't block creativity. They channel it into something focused and sharp.</p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Rest is part of the work</h4>
+              <p class="timeline-text">The best ideas rarely come from grinding. A walk, a nap, a conversation — sometimes stepping away from the screen is exactly what the design needs.</p>
+            </li>
+          </ol>
         </section>
 
       </article>
 
 
-
-
-
-      <!--
-        - #CONTACT
-      -->
-
+      <!-- ==================== #CONTACT ==================== -->
       <article class="contact" data-page="contact">
 
         <header>
           <h2 class="h2 article-title">Contact</h2>
+          <p class="section-intro">Ready to bring a digital product, website, or brand experience to life? Let's connect and create something polished, user-focused, and memorable.</p>
         </header>
 
         <section class="mapbox" data-mapbox>
           <figure>
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248849.48319147155!2d7.367575827148438!3d9.076791387712524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104b0507811ce141%3A0x61569d1ebe3b46b1!2sAbuja%2C%20Federal%20Capital%20Territory%2C%20Nigeria!5e0!3m2!1sen!2sng!4v1685350000000!5m2!1sen!2sng"
               width="400" height="300" loading="lazy"></iframe>
           </figure>
         </section>
 
+        <p class="contact-note">Open to freelance and contract product work. Send a brief project note and I'll respond within 24 hours.</p>
+
+        <!-- What to expect -->
+        <section class="timeline" style="margin-top: 30px; margin-bottom: 30px;">
+          <div class="title-wrapper">
+            <div class="icon-box"><ion-icon name="chatbubbles-outline"></ion-icon></div>
+            <h3 class="h3">What to Expect</h3>
+          </div>
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">A reply within 24 hours</h4>
+              <p class="timeline-text">I take every enquiry seriously. Whether it's a quick question or a full project brief, you'll hear back from me promptly.</p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">A real conversation, not a pitch</h4>
+              <p class="timeline-text">I'd rather understand your goals than sell you on a service. The first call is always about figuring out if we're the right fit for each other.</p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Transparent, straightforward pricing</h4>
+              <p class="timeline-text">No hidden costs, no vague estimates. Once I understand the scope, I'll give you a clear number and a realistic timeline.</p>
+            </li>
+          </ol>
+        </section>
+
         <section class="contact-form">
-
-          <h3 class="h3 form-title">Contact Form</h3>
-
+          <h3 class="h3 form-title">Send a Message</h3>
           <form action="#" class="form" data-form>
-
             <div class="input-wrapper">
               <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
-
               <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
             </div>
-
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
-
+            <textarea name="message" class="form-input" placeholder="Tell me about your project..." required data-form-input></textarea>
             <button class="form-btn" type="submit" disabled data-form-btn>
               <ion-icon name="paper-plane"></ion-icon>
               <span>Send Message</span>
             </button>
-
           </form>
-
         </section>
 
       </article>
@@ -1180,22 +743,9 @@
 
   </main>
 
-
-
-
-
-
-  <!--
-    - custom js link
-  -->
-  <script src="./assets/js/script.js"></script>
-
-  <!--
-    - ionicon link
-  -->
+  <script src="./js/script.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
-
 </html>
