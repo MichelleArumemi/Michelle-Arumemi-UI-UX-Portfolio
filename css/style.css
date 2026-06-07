@@ -676,8 +676,10 @@ main {
   font-size: var(--fs-7);
 }
 
-.contact-info address {
-  font-style: normal;
+.contact-note {
+  margin-top: 6px;
+  color: var(--white-1);
+  font-size: var(--fs-4);
 }
 
 .social-list {
@@ -1426,7 +1428,7 @@ main {
 .project-img img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   transition: var(--transition-1);
 }
 
@@ -1556,7 +1558,7 @@ main {
   #CONTACT
 \*-----------------------------------*/
 
-.mapbox {
+.cardbox {
   position: relative;
   height: 250px;
   width: 100%;
@@ -1566,11 +1568,20 @@ main {
   overflow: hidden;
 }
 
-.mapbox figure {
+.cardbox figure {
   height: 100%;
+  width: 100%;
+  margin: 0;
 }
 
-.mapbox iframe {
+.cardbox img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.cardbox iframe {
   width: 100%;
   height: 100%;
   border: none;
@@ -2029,7 +2040,7 @@ textarea.form-input::-webkit-resizer {
    * #CONTACT
    */
 
-  .mapbox {
+  .cardbox {
     height: 380px;
     border-radius: 18px;
   }
